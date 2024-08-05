@@ -2,7 +2,7 @@
     <nav>
         <ul>
             <li><router-link to="/">Accueil</router-link></li>
-            <li><router-link to="/about">À propos</router-link></li>
+            <li><router-link to="/home">À propos</router-link></li>
             <li><router-link to="/events">Événements</router-link></li>
             <li><router-link to="/libraries">Libraries</router-link> </li>
             <li><router-link to="/contact">Contact</router-link></li>
@@ -34,5 +34,13 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+@media only screen and ( max-width:768px) {
+    nav ul {
+        font-size: 12px;
+    }
+    nav {
+        width: auto;
+    }
 }
 </style>
